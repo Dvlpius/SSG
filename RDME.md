@@ -15,3 +15,13 @@ An Super Smart GUI For
     [CiscoRouter]=>NoNeedSSG;
     [FireWall]=>NoNeedSSG;
   5-etc
+
+
+
+///[MobileDev]///////////////////////
+SSG for Mobile Devices
+In this senario we have double mode,mode one named (Mode_0 or YoungUsr_mode),mode two named (Mode_1 or OldUsr_mode)
+YoungUsr_mode: mean user has age from +10year to 40year
+
+
+OldUsr_mode:mean user has age from (+3Year to -10Year) && (+40year to 100year)
