@@ -32,3 +32,34 @@ OldUsr_mode:user can easily underestand Functions and use it daily;
 
 SSG(SuperSmartGUI) in Mobile Devices has double mod and user easyly can switch betttwen YoungUsr_mode & OldUsr_mode or use both in synchorized;
 
+///[DesktopDev]///////////////////////
+SSG for Desktop Devices [PC, Laptop]
+In this senario we have a GUI can undestand user behavior and User faviorites and user activity(Job,ToDo,etc) and Exec User Command's Just By a Simple Button/Action;
+so all worldwide/worldlevel user has age from (+3Year to -10Year) && (+40Year to -100year) cand easily work with PC or Laptop;
+LifeIsBeutiful
+
+Example(1)
+{
+  ///SimpleExample
+  ///System Seach From User Behavior by Date and found it,then run it, full automatic/automcion
+  ///
+  _DATE="Friday";
+  UsrFavLst = Query("SELECT * FROM UserBehaviorHistory WHERE date=${_DATE}");
+  ToDO()
+  {
+   foreach (UsrFav in UsrFavLst)
+    {
+    UsrFavTable = Fetch_Table_Content(UsrFav);
+    UsrBehaviorAttribute = Fetch_Att_Content(UsrFavTable);
+    Res=Query("Select ${UsrFav} FROM ${UsrFavTable} where Flaq=${UsrBehaviorAttribute}"]);
+      ///Exp::Query="Select Email FROM Emailes where Flaq=No-Spam];
+    STD_OUT<<Res;  
+    Exec(STD_IN);
+    }
+  }
+    
+}
+
+
+
+
